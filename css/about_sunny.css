@@ -1,0 +1,15 @@
+
+
+.about-img {
+    max-width: 100%;
+  height: auto;
+    border-radius: 0.25rem !important;
+  margin-bottom: 3rem;
+}
+
+.team-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50% !important;
+}
+

@@ -19,92 +19,194 @@
     <link href="css/home.css" rel="stylesheet"/>
 </head>
 <body>
-    <!--네비게이션-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href=""><img src="../../assets/img//logos/logo.png" alt="..."
-                                                 style="height: 50px; margin-top: 15px;"/></a>
-            <!--창 최소화 시 보이는 메뉴 bar-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-            </button>
+<!--네비게이션-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="home.html"><img src="../../assets/img/logos/logo.png" alt="..."
+                                                      style="height: 50px; margin-top: 15px;"/></a>
+        <!--창 최소화 시 보이는 메뉴 bar-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            MENU
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">About Sunny</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">사진 변환</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">고객 센터</a></li>
-                    <li class="nav-item"><a class="nav-link" href="">마이 페이지</a></li>
-                </ul>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="home.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="about_sunny.html">About Sunny</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown1" data-bs-toggle="dropdown"
+                       aria-expanded="false">사진변환</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                        <li><a class="dropdown-item" href="#">화질개선</a></li>
+                        <li><a class="dropdown-item" href="#">사진보정</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="customer.html">고객센터</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown2" data-bs-toggle="dropdown"
+                       aria-expanded="false">마이페이지</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown2">
+                        <li><a class="dropdown-item" href="#">정보수정</a></li>
+                        <li><a class="dropdown-item" href="#">나의앨범</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="col-md-3 text-end">
+                <a href="login.html">
+                    <button type="button" class="btn btn-primary btn-login">Login</button>
+                </a>
+                <a href="signup.html">
+                    <button type="button" class="btn btn-primary btn-login">Sign-up</button>
+                </a>
             </div>
         </div>
-    </nav>
-    <!--//네비게이션-->
+    </div>
+</nav>
+<!--//네비게이션-->
 
-    <!--header-->
-    <header class="masthead">
-        <div class="container">
-            <div class="masthead-subheading">Welcome To Sunny!</div>
-            <div class="masthead-heading">It's Nice To Meet You.</div>
-            <a class="btn btn-primary btn-xl" href="">JOIN</a>
+<!--header-->
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">Welcome To Sunny!</div>
+        <div class="masthead-heading">It's Nice To Meet You.</div>
+        <a class="btn btn-primary btn-xl" href="signup.html">Sign-up</a>
+    </div>
+</header>
+<!--//header-->
+
+<!--section-introduce-->
+<section class="introduce">
+    <div class="introduce-div">
+        <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h2 class="introduce-title"><b class="highlight-font-color">Sunny</b>가 가진 주요 기능</h2>
+                <p class="introduce-content">Sunny를 사용해서 화질을 개선하고<br>아름답게 이미지를 보정해봐요 :)</p>
+            </div>
+            <div class="col-lg-8">
+                <div class="row gx-5 row-cols-1 row-cols-md-2">
+                    <div class="introduce-div-section">
+                        <h5>이미지를 선명하게! <b class="highlight-font-color">화질 개선</b></h5>
+                        <p>흐릿한 이미지는 Sunny가 처리해 줄게요!<br>
+                            Sunny는 저화질의 이미지를 고화질로 변환해 줘요.</p>
+                        <a class="btn btn-outline-sunny btn-sm px-2 mt-2" href="">사용하기</a>
+                    </div>
+                    <div class="introduce-div-section">
+                        <h5>이미지를 아름답게! <b class="highlight-font-color">이미지 보정</b></h5>
+                        <p>마음에 들지 않는 색상의 이미지라고 버리지 말아요!<br>
+                            Sunny의 필터로 이미지를 아름답게 보정하세요.</p>
+                        <a class="btn btn-outline-sunny btn-sm px-2 mt-2" href="">사용하기</a>
+                    </div>
+                </div>
+                <div class="row gx-5 row-cols-1 row-cols-md-2">
+                    <div class="introduce-div-section">
+                        <h5>내 이미지가 어디갔지? <b class="highlight-font-color">원본 이미지 저장</b></h5>
+                        <p>원본 이미지가 사라져도 걱정하지 마세요!<br>
+                            원본 이미지를 마이 페이지에서 확인할 수 있어요.</p>
+                        <a class="btn btn-outline-sunny btn-sm px-2 mt-2" href="">사용하기</a>
+                    </div>
+
+                    <div class="introduce-div-section">
+                        <h5>변환한 이미지는 나만의 공간으로! <b class="highlight-font-color">My Album</b></h5>
+                        <p>나만의 작은 앨범!<br>
+                            변환한 이미지는 마이 페이지에서 확인할 수 있어요.</p>
+                        <a class="btn btn-outline-sunny btn-sm px-2 mt-2" href="">사용하기</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
-    <!--//header-->
+    </div>
+</section>
+<!--//section-introduce-->
 
-    <!--section-introduce-->
-    <section class="introduce">
-        <div class="introduce-div">
+<!--section-contents one-->
+<section class="section-basic bg-highlight">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <h2 class="text-bold">Improvement of resolution.</h2>
+                <p class="font-context">Double the size of your images!<br>
+                    No pixelization, no blurriness! </p>
+            </div>
+            <div class="col-lg-6">
+                <img class="contents-img" sytle="height: 50px;" src="../../assets/img/home_0.png" alt="..."/></div>
+        </div>
+    </div>
+</section>
+<!--//section-contents one-->
+
+<!--section-contents two-->
+<section class="section-basic">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="text-center blank-mb">
+                <h2 class="text-bold">Your Beautiful Moment!</h2>
+                <p class="font-context">기억하고 싶은 모든 순간을 더 선명하고 아름답게, 모두를 위한 Sunny </p>
+            </div>
             <div class="row">
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h2 class="introduce-title"><b class="highlight-font">Sunny</b>가 가진 주요 기능</h2>
-                    <p class="introduce-content">Sunny를 사용해서 화질을 개선하고<br>아름답게 이미지를 보정해봐요 :)</p>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div>
+                        <img class="convert-img" src="../../assets/img/home_1.png" alt="..."/></div>
                 </div>
-                <div class="col-lg-8">
-                    <div class="row gx-5 row-cols-1 row-cols-md-2">
 
-                        <div class="introduce-div-section">
-                            <h5>이미지를 선명하게! <b class="highlight-font">화질 개선</b></h5>
-                            <p>흐릿한 이미지는 Sunny가 처리해 줄게요!
-                                Sunny는 저화질의 이미지를 고화질로 변환해 줘요.</p>
-                            <a class="btn btn-outline-sunny btn-sm px-2 mt-2" href="#!">사용하기</a>
-                        </div>
-
-                        <div class="introduce-div-section">
-                            <h5>이미지를 아름답게! <b class="highlight-font">이미지 보정</b></h5>
-                            <p>마음에 들지 않는 색상의 이미지라고 버리지 말아요!
-                                Sunny의 필터로 이미지를 아름답게 보정하세요.</p>
-                            <a class="btn btn-outline-sunny btn-sm px-2 mt-2" href="#!">사용하기</a>
-                        </div>
-
-                    </div>
-                    <div class="row gx-5 row-cols-1 row-cols-md-2">
-                        <div class="introduce-div-section">
-                            <h5>내 이미지가 어디갔지? <b class="highlight-font">원본 이미지 저장</b></h5>
-                            <p>원본 이미지가 사라져도 걱정하지 마세요!
-                                원본 이미지를 마이 페이지에서 확인할 수 있어요.</p>
-                            <a class="btn btn-outline-sunny btn-sm px-2 mt-2" href="#!">사용하기</a>
-                        </div>
-
-                        <div class="introduce-div-section">
-                            <h5>변환한 이미지는 나만의 공간으로! <b class="highlight-font">My Album</b></h5>
-                            <p>나만의 작은 앨범!
-                                변환한 이미지는 마이 페이지에서 확인할 수 있어요.</p>
-                            <a class="btn btn-outline-sunny btn-sm px-2 mt-2" href="#!">사용하기</a>
-                        </div>
-                    </div>
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div>
+                        <img class="convert-img" src="../../assets/img/home_2.png" alt="..."/></div>
                 </div>
+
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <div>
+                        <img class="convert-img" src="../../assets/img/home_3.png" alt="..."/></div>
+                </div>
+
             </div>
         </div>
-    </section>
-    <!--//section-introduce-->
+    </div>
+</section>
+<!--//section-contents two-->
+
+<!--section-contents three-->
+<section class="section-basic bg-highlight">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="text-center">
+                <h3 class="h-style"><b class="highlight-font-color">Sunny</b>를 통해 사진의 화질을 개선하고, <br>
+                    이미지를 아름답게 보정해 보세요!</h3>
+                <a class="btn btn-primary btn-sm px-2 mt-2 me-3" href="">JOIN</a>
+                <a class="btn btn-primary btn-sm px-2 mt-2" href="">NOTICE</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//section-contents three-->
 
 
-    <!-- Bootstrap JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+<!-- Footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-left">
+                <a href=""><img src="../../assets/img/logos/logo.png" alt="..."
+                                style="height: 50px; margin-top: 15px;"/></a></div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social" href="https://www.instagram.com/">
+                    <img src="../../assets/img/logos/instagram.png" alt="..." style="height: 20px;"/></a>
+                <a class="btn btn-dark btn-social" href="https://www.youtube.com/">
+                    <img src="../../assets/img/logos/youtube.png" alt="..." style="height: 20px;"/></a>
+                <a class="btn btn-dark btn-social" href="https://www.facebook.com/">
+                    <img src="../../assets/img/logos/facebook.png" alt="..." style="height: 20px;"/></a>
+            </div>
+            <div class="col-lg-4 text-right">
+                <p>© Sunny, Inc. 2022. We love our users!</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
 </body>
 </html>

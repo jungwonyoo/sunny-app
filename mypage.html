@@ -16,7 +16,7 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Core theme CSS-->
     <link href="css/common.css" rel="stylesheet"/>
-    <link href="css/about_sunny.css" rel="stylesheet"/>
+    <link href="css/mypage.css" rel="stylesheet"/>
 </head>
 <body>
 <!--네비게이션-->
@@ -65,86 +65,78 @@
 </nav>
 <!--//네비게이션-->
 
-    <!-- Header-->
-    <header class="common-header">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-xxl-6">
-                    <div class="common-text-div">
-                        <h1 class="highlight-font-color">About Sunny</h1>
-                    </div>
+<!-- Header-->
+<header class="common-header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xxl-6">
+                <div class="common-text-div">
+                    <h1 class="highlight-font-color">My Page</h1>
                 </div>
             </div>
         </div>
-    </header>
-    <!--//Header-->
+    </div>
+</header>
+<!--//Header-->
 
-    <!-- About section One-->
-    <section class="section-basic">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <img class="about-img" src="../../assets/img/img_main.png" alt="..."/></div>
-                <div class="col-lg-6">
-                    <h2 class="text-bold">Sunny?</h2>
-                    <p class="font-context">써니는 화질 개선 & 이미지 보정을 할 수 있는 사이트 입니다. </p>
-                </div>
-            </div>
+    <div class="form-mypage">
+    <div class="container">
+        <h1 class="mypage-title">내 정보 확인</h1>
+        <div class="row text-center">
+            <table class="table table-striped">
+                <tr>
+                    <th class="table-primary" style="width: 33%;">아이디</th>
+                    <th class="table-primary" style="width: 33%;">이름</th>
+                    <th class="table-primary" style="width: 33%;">Email</th>
+                </tr>
+            </table>
         </div>
-    </section>
+    </div>
 
-    <!-- About section Two-->
-    <section class="section-basic bg-highlight">
-        <div class="container">
-            <div class="row gx-5 align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="text-bold">회원 혜택 소개</h2>
-                    <p class="font-context">회원은 원본 사진을 볼 수 있습니다. </p>
-                </div>
-                <div class="col-lg-6">
-                    <img class="about-img" src="../../assets/img/img_main.png" alt="..."/></div>
-            </div>
-        </div>
-    </section>
+    <hr>
 
-    <!--팀소개-->
-    <section class="py-5">
-        <div class="container px-5 my-5">
-            <div class="text-center">
-                <h2 class="text-bold">TEAM MEMBER</h2>
-            </div>
-            <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
-                <div class="col mb-5 mb-5 mb-xl-0">
-                    <div class="text-center">
-                        <img class="team-img" src="../../assets/img/joseph.jpg" alt="..."/>
-                        <h5 class="highlight-font-color mt-2">박의정</h5>
-                        <div class="text-italic font-context">Leader &amp; Back-end</div>
-                    </div>
-                </div>
-                <div class="col mb-5 mb-5 mb-xl-0">
-                    <div class="text-center">
-                        <img class="team-img" src="../../assets/img/oliver.jpg" alt="..."/>
-                        <h5 class="highlight-font-color mt-2">김성광</h5>
-                        <div class="text-italic font-context">Back-end</div>
-                    </div>
-                </div>
-                <div class="col mb-5 mb-5 mb-sm-0">
-                    <div class="text-center">
-                        <img class="team-img" src="../../assets/img/jy.jpg" alt="..."/>
-                        <h5 class="highlight-font-color mt-2">신주용</h5>
-                        <div class="text-italic font-context">Back-end</div>
-                    </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="text-center">
-                        <img class="team-img" src="../../assets/img/jay.jpg" alt="..."/>
-                        <h5 class="highlight-font-color mt-2">유정원</h5>
-                        <div class="text-italic font-context">Front-end</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-xl-9 mx-auto">
+                <div class="card flex-row my-5 border-0 shadow rounded-3 overflow-hidden">
+                    <div class="card-img-left d-none d-md-flex"></div>
+                    <div class="card-body p-4 p-sm-5">
+                        <h3 class="card-title text-center mb-5 fw-bold fs-3">내 정보 수정</h3>
+
+                        <!-- 비밀번호 변경 -->
+                        <div class="form-floating mb-3">
+                            <form method="post" action="updateUserPassword">
+                                <input type="hidden" name="no" maxlength="50"> 비밀번호 수정
+                                <input class="form-control blank-mb" type="text" name="password" maxlength="50">
+
+                                <div class="d-grid mb-2">
+                                    <button type="submit" class="btn btn-primary">비밀번호 변경</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <form method="post" action="updateUserEmail">
+                                <input type="hidden" name="no" maxlength="50"> 이메일 수정
+                                <input class="form-control blank-mb" type="text" name="email" maxlength="50">
+
+                                <div class="d-grid mb-2">
+                                    <button type="submit" class="btn btn-primary float-end">이메일 변경</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <hr>
+
+                        <form>
+                            <button type="submit" class="btn btn-primary btn-account-delete">계정 삭제</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+        </div>
 
     <!-- Footer-->
     <footer class="footer">

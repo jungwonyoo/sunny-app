@@ -1,0 +1,44 @@
+* {
+    font-family: 'IBM Plex Sans', sans-serif, 'IBM Plex Sans KR', sans-serif;
+}
+
+.mypage-title {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.table {
+    background-color: #6c757d;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    vertical-align: top;
+    border-color: #6c757d;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: #6c757d;
+    color: #212529;
+}
+
+.table-primary {
+  --bs-table-bg: #FFF9E8;
+  --bs-table-striped-bg: #FFF9E8;
+  --bs-table-striped-color: #000;
+  color: #000;
+  border-color: #FFF9E8;
+}
+
+.form-mypage {
+    width: 100%;
+    max-width: 800px;
+    padding: 15px;
+    margin: auto;
+}
+
+.btn-account-delete {
+    width: 100%;
+}

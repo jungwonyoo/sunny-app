@@ -1,0 +1,49 @@
+* {
+    font-family: 'IBM Plex Sans', sans-serif, 'IBM Plex Sans KR', sans-serif;
+}
+
+.convert {
+    width: 100%;
+    max-width: 1000px;
+    padding: 15px;
+    margin: auto;
+}
+
+.convert-row {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.convert-div {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.convert-border {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem
+}
+
+.convert-text {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'IBM Plex Sans', sans-serif, 'IBM Plex Sans KR', sans-serif;
+}
+
+.convert-title {
+    color: #FD9F28;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.convert-content {
+    color: #6c757d;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.convert-group-div {
+    justify-content: center;
+}

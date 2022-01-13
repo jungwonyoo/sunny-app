@@ -4,8 +4,8 @@
 
 .mypage-title {
     text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-weight: bold;
     font-size: 1.75rem;
 }
@@ -25,20 +25,60 @@
 }
 
 .table-primary {
-  --bs-table-bg: #FFF9E8;
-  --bs-table-striped-bg: #FFF9E8;
-  --bs-table-striped-color: #000;
-  color: #000;
-  border-color: #FFF9E8;
+    --bs-table-bg: #FFF9E8;
+    --bs-table-striped-bg: #FFF9E8;
+    --bs-table-striped-color: #000;
+    color: #000;
+    border-color: #FFF9E8;
 }
 
 .form-mypage {
     width: 100%;
-    max-width: 800px;
+    max-width: 500px;
     padding: 15px;
     margin: auto;
 }
 
 .btn-account-delete {
     width: 100%;
+    background-color: #FF0000FF;
+}
+
+.btn-account-delete:hover {
+    color: #fff;
+    background-color: #939393;
+    border-color: #939393;
+}
+
+
+.mypage-div {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.mypage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.mypage-body {
+    flex: 1 1 auto;
+    padding: 1.5rem
+}
+
+.mypage-text {
+    font-family: 'IBM Plex Sans', sans-serif, 'IBM Plex Sans KR', sans-serif;
+    text-align: center;
+}
+
+.mypage-btn-group {
+    display: grid;
+    margin-bottom: 1rem;
 }

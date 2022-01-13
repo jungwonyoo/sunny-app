@@ -1272,41 +1272,6 @@ a:hover {
     background-color: transparent;
 }
 
-.btn-dark {
-    color: #fff;
-    background-color: #212529;
-    border-color: #212529;
-}
-
-.btn-dark:hover {
-    color: #fff;
-    background-color: #1c1f23;
-    border-color: #1a1e21;
-}
-
-.btn-check:focus + .btn-dark, .btn-dark:focus {
-    color: #fff;
-    background-color: #1c1f23;
-    border-color: #1a1e21;
-    box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
-}
-
-.btn-check:checked + .btn-dark, .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active, .show > .btn-dark.dropdown-toggle {
-    color: #fff;
-    background-color: #1a1e21;
-    border-color: #191c1f;
-}
-
-.btn-check:checked + .btn-dark:focus, .btn-check:active + .btn-dark:focus, .btn-dark:active:focus, .btn-dark.active:focus, .show > .btn-dark.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
-}
-
-.btn-dark:disabled, .btn-dark.disabled {
-    color: #fff;
-    background-color: #212529;
-    border-color: #212529;
-}
-
 .btn-social {
     height: 2.5rem;
     width: 2.5rem;
@@ -1349,8 +1314,8 @@ a:hover {
 
 /*섹션*/
 .section-basic {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .bg-highlight {
@@ -1358,12 +1323,12 @@ a:hover {
 }
 
 .blank {
-    margin-top: 1rem !important;
-    margin-bottom: 1rem !important;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .blank-mb {
-    margin-bottom: 1rem !important;
+    margin-bottom: 1rem;
 }
 
 /*푸터*/
@@ -1371,8 +1336,8 @@ a:hover {
     text-align: center;
     font-size: 0.9rem;
     font-family: 'IBM Plex Sans', sans-serif, 'IBM Plex Sans KR', sans-serif;
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 

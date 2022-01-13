@@ -19,6 +19,10 @@
   padding: 1rem 1rem;
 }
 
+.album-text {
+  font-family: 'IBM Plex Sans', sans-serif, 'IBM Plex Sans KR', sans-serif;
+}
+
 .album-img,
 .album-img-top,
 .album-img-bottom {

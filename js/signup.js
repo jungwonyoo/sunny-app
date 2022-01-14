@@ -52,7 +52,7 @@ function signupchk() {
 
 function checkValidUserName(form) {
     if (form.userName.value == "") {
-        document.getElementById('alert_userName').innerText = "이름을 입력해주세요";
+        document.getElementById('alert_userName').innerText = "닉네임을 입력해주세요";
         //form.username.focus();
         return false;
     }
@@ -62,15 +62,15 @@ function checkValidUserName(form) {
 
 	if (name.search(/\s/) != -1) {
         // 공백 제거.
-        document.getElementById('alert_userName').innerText = "이름에 공백이 존재합니다.";
+        document.getElementById('alert_userName').innerText = "닉네임에 공백이 존재합니다.";
         return false;
     }else if (num > 0) {
         // 숫자 입력 방지.
-        document.getElementById('alert_userName').innerText = "유효하지 않은 이름 입니다.";
+        document.getElementById('alert_userName').innerText = "유효하지 않은 닉네임 입니다.";
         return false;
 	}else if (spe > 0) {
         // 특수문자 입력 방지.
-        document.getElementById('alert_userName').innerText = "유효하지 않은 이름 입니다.";
+        document.getElementById('alert_userName').innerText = "유효하지 않은 닉네임 입니다.";
         return false;
 }
     return true;
